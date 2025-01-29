@@ -23,4 +23,4 @@ jobs:
 
       - name: Build and push
         run: |
-          docker buildx build ./node_server/ -t ${{ secrets.DOCKERHUB_USERNAME }}/firstnode_server:latest --push .
+          docker buildx build --push -t your-dockerhub-username/firstnode_server:latest ./node_server/
