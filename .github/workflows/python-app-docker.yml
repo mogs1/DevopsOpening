@@ -23,4 +23,4 @@ jobs:
 
       - name: Build and push
         run: |
-          docker buildx build --push -t your-dockerhub-username/firstnode_server:latest ./python_server/
+          docker buildx build --platform linux/amd64,linux/arm64 --push -t mobs1/firstnode_server:latest ./python_server/
