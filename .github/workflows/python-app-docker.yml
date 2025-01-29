@@ -1,5 +1,4 @@
-name: Build and push Docker image
-
+name: pipeline for pull_request
 on:
   pull_request:
     branches:
